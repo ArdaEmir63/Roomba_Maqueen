@@ -1,0 +1,49 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="lx(n=U2[_p#{XjJ+cUn-">op grond</variable><variable id="9e])cv]vF9v{E)3F=E40">myImage</variable><variable id="*G=*sE:gNgS@G1JIr5BB">Bots</variable><variable id="[G:VPV=LJ+{TvPNH(KTN">iets gezien</variable></variables><block type="device_forever" id="2nxKOK#38EG{]9gihi?K" x="4" y="-455"><statement name="HANDLER"><block type="controls_if" id="X}EryJHHA+5GOD+4xVdH"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="02~aW7h/zVEdsN[Z-1gB"><field name="OP">LT</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="ultrasonic_sensor" id="?jgE;`AtFtH~.8RC,VQB"><field name="unit">PingUnit.Centimeters</field></block></value><value name="B"><shadow type="math_number" id="$%_|M]X:IlR71@XW|)U4"><field name="NUM">30</field></shadow></value></block></value><statement name="DO0"><block type="variables_set" id="Pw*LRL4@c!th;ITadmht"><field name="VAR" id="[G:VPV=LJ+{TvPNH(KTN">iets gezien</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="[sTzV=3+3scXN;Fh({!a"><field name="BOOL">TRUE</field></block></value></block></statement><statement name="ELSE"><block type="variables_set" id="An2,g9dd{Qsmk_AJQ6rh"><field name="VAR" id="[G:VPV=LJ+{TvPNH(KTN">iets gezien</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="C3d^ExXs97c:O78JIyCF"><field name="BOOL">FALSE</field></block></value></block></statement></block></statement></block><block type="device_gesture_event" id="`fik~*A]g;-VJSnWR4d1" x="1" y="-136"><field name="NAME">Gesture.LogoUp</field><statement name="HANDLER"><block type="variables_set" id="{NU3NO3Fd=f]wCAGg{n7"><field name="VAR" id="lx(n=U2[_p#{XjJ+cUn-">op grond</field><value name="VALUE"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="logic_boolean" id="a,VP#7PySONa_Itmb?g3"><field name="BOOL">TRUE</field></block></value></block></statement></block><block type="device_forever" id="8uvtuI7/#~Q5:E!,o!Pj" x="397" y="-135"><statement name="HANDLER"><block type="controls_if" id="a]{;:,zwtkusI0zkAdf="><mutation elseif="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="variables_get" id="k`Bkp$0iSG9xQm9^H%h2"><field name="VAR" id="lx(n=U2[_p#{XjJ+cUn-">op grond</field></block></value><statement name="DO0"><block type="device_while" id="eH-#iiyFFMAX4M:+P?Pm"><value name="COND"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="variables_get" id="xGPN2T8K*`r)4i(`qfoF"><field name="VAR" id="lx(n=U2[_p#{XjJ+cUn-">op grond</field></block></value><statement name="DO"><block type="controls_if" id="gB=rW;%{OJF[7$d8J6w$"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="/sT0JzHrwh6LfFtWPU6_"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="{NTs?ZfTK!o6);$_??F,"><field name="VAR" id="[G:VPV=LJ+{TvPNH(KTN">iets gezien</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="FWaB0MuikqupC.DCjTeB"><field name="BOOL">TRUE</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="0@@czCDWyJQG|?.axi{4"><field name="LEDS">`
+        . # # # . 
+        # # . . # 
+        # . # . # 
+        # . . # # 
+        . # # # .
+        `</field><next><block type="motor_motorStop" id="_/l9(X9VYR?N}=+-o7HN"><field name="motors">maqueen.Motors.All</field><next><block type="device_pause" id="aXfDUz?c5L3*;mu2tMVm"><value name="pause"><shadow type="timePicker" id="T(d]qbon(vP:3yX1qk`y"><field name="ms">500</field></shadow></value><next><block type="motor_MotorRun" id="K0G-$ee}-GyFm;[H,qC%"><field name="index">maqueen.Motors.All</field><field name="Dir">maqueen.Dir.CCW</field><value name="speed"><shadow type="math_number_minmax" id="H80*6*IzrP01,$0*2I{g"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">154</field></shadow></value><next><block type="device_pause" id=")u4-Iy^M{6]KMjB=5t_z"><value name="pause"><shadow type="timePicker" id="1dQH%O1==PPRXYLar6x7"><field name="ms">100</field></shadow></value><next><block type="motor_MotorRun" id="-F8+^aC*et8XgubD$TKa"><field name="index">maqueen.Motors.M2</field><field name="Dir">maqueen.Dir.CW</field><value name="speed"><shadow type="math_number_minmax" id="2rfsWf5+nMH%U2CbIvr{"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">255</field></shadow></value><next><block type="motor_MotorRun" id="sCD^U{E]5OD]ZU|{B=yQ"><field name="index">maqueen.Motors.M1</field><field name="Dir">maqueen.Dir.CCW</field><value name="speed"><shadow type="math_number_minmax" id="Zf(HE`U_@`%o[%]~:ukE"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">255</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement><statement name="ELSE"><block type="device_while" id="4/]w33YQwc[K35T#7Xh0"><value name="COND"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="gK?`R[H]vL)B/wehd8rY"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="(BsGgE3BKS?kj#go0sbL"><field name="VAR" id="[G:VPV=LJ+{TvPNH(KTN">iets gezien</field></block></value><value name="B"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="logic_boolean" id="GtP{Fs){kq8/%JD1JO,~"><field name="BOOL">FALSE</field></block></value></block></value><statement name="DO"><block type="motor_MotorRun" id="5U.wCoC/jwBt,BD_$%g,"><field name="index">maqueen.Motors.All</field><field name="Dir">maqueen.Dir.CW</field><value name="speed"><shadow type="math_number_minmax" id="p1JFjB{qTWMmrTh;y42p"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">255</field></shadow></value><next><block type="device_show_leds" id="T)}UGvU.AP.IGcxj?skd"><field name="LEDS">`
+        . # . . . 
+        . # # . . 
+        # # # # . 
+        . # # . . 
+        . # . . .
+        `</field><next><block type="device_show_leds" id="OGBL*9z3,m_E?T637W]a"><field name="LEDS">`
+        . . # . . 
+        . . # # . 
+        . # # # # 
+        . . # # . 
+        . . # . .
+        `</field><next><block type="device_show_leds" id="^-(-jP*%0lss}_s]**hW"><field name="LEDS">`
+        . . . # . 
+        . . . # # 
+        . . # # # 
+        . . . # # 
+        . . . # .
+        `</field><next><block type="device_show_leds" id="B:bDyEY_=B13$hTpygVN"><field name="LEDS">`
+        . . . . # 
+        . . . . # 
+        # . . # # 
+        . . . . # 
+        . . . . #
+        `</field><next><block type="device_show_leds" id="zhraLoFCUd/5}`b_3ZA("><field name="LEDS">`
+        . . . . . 
+        # . . . . 
+        # # . . # 
+        # . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="o-3%cPD#?,T2Z0vDFV})"><field name="LEDS">`
+        # . . . . 
+        # # . . . 
+        # # # . . 
+        # # . . . 
+        # . . . .
+        `</field><next><block type="break_keyword" id="91{+:5E(uQ)(f[WTLTN]"></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></statement></block></statement></block></statement><value name="IF1"><block type="logic_compare" id="wK`=/kWP{mN{gz(LFS9$"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="K/6.C=bE8/::$?x51zgd"><field name="VAR" id="lx(n=U2[_p#{XjJ+cUn-">op grond</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="6$1rvYp7wGhTuGM_j.!w"><field name="BOOL">FALSE</field></block></value></block></value><statement name="DO1"><block type="motor_motorStop" id="Q*CWWnrLAa^/0x+BF.b$"><field name="motors">maqueen.Motors.All</field><next><block type="device_show_leds" id="k{%EEhf!fOC?Ke]q!Q#T"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . # . # . 
+        . # . # . 
+        . . . . .
+        `</field></block></next></block></statement></block></statement></block><block type="device_gesture_event" id="]LF%Di1~83:+,m#dW:EE" x="0" y="0"><field name="NAME">Gesture.LogoDown</field><statement name="HANDLER"><block type="variables_set" id="`AOwTEws7:KoCWGZ,fsu"><field name="VAR" id="lx(n=U2[_p#{XjJ+cUn-">op grond</field><value name="VALUE"><shadow type="math_number"><field name="NUM">-1</field></shadow><block type="logic_boolean" id="zf-!N%O./?y42W!7IsX{"><field name="BOOL">FALSE</field></block></value></block></statement></block></xml>
